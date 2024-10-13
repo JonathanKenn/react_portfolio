@@ -1,12 +1,31 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_jyc0gef", "template_oot8zuj", form.current, {
+        publicKey: "8lhFFN6hg2mENdHvL",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        },
+      );
+  };
   return (
     <div
       className="bg-gradient-to-bl from-[#171716] to-[#1E1D1A] px-10 pb-32 pt-12 text-white lg:flex lg:px-36 lg:pb-32 lg:pt-24"
       id="contact"
     >
-      <div className="lg:w-1/3">
+      <div className="lg:w-1/3" data-aos="fade-right">
         <div className="mb-2 h-[0.138rem] w-4/5 bg-gradient-to-l from-secondary to-primary"></div>
         <div className="mb-10 w-4/5 lg:mb-0">
           <h1 className="mb-3 text-2xl font-semibold lg:text-4xl">Contact</h1>
@@ -22,8 +41,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="lg:ml-20 lg:w-2/3">
-        <form autoComplete="off">
+      <div className="lg:ml-20 lg:w-2/3" data-aos="fade-left">
+        <form autoComplete="off" ref={form} onSubmit={sendEmail}>
           <div className="mb-7">
             <label
               htmlFor="name"
@@ -35,7 +54,7 @@ const Contact = () => {
             <div className="mt-2 rounded-lg bg-gradient-to-l from-secondary to-[#EFE9D6] p-[0.05rem]">
               <input
                 type="text"
-                name="name"
+                name="from_name"
                 id="name"
                 className="w-full rounded-lg bg-[#2A2925] py-3 pl-3 text-white placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-[#EFE9D6] sm:text-sm sm:leading-6"
                 placeholder="Your Name"
@@ -53,7 +72,7 @@ const Contact = () => {
             <div className="mt-2 rounded-lg bg-gradient-to-l from-secondary to-[#EFE9D6] p-[0.05rem]">
               <input
                 type="email"
-                name="email"
+                name="from_email"
                 id="email"
                 className="w-full rounded-lg bg-[#2A2925] py-3 pl-3 text-white placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-[#EFE9D6] sm:text-sm sm:leading-6"
                 placeholder="Your email"

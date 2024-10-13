@@ -5,7 +5,7 @@ const Project = () => {
   return (
     <div className="px-10 pb-32 pt-8 lg:px-36 lg:pt-10" id="project">
       <div className="mt-10 block lg:flex">
-        <div className="lg:w-1/3">
+        <div className="lg:w-1/3" data-aos="fade-right">
           <div className="sticky top-20">
             <div className="mb-2 h-[0.138rem] w-4/5 bg-gradient-to-r from-secondary to-primary"></div>
             <p className="text-2xl font-semibold lg:text-4xl">Project</p>
@@ -19,7 +19,7 @@ const Project = () => {
           </div>
         </div>
 
-        <div className="lg:w-2/3">
+        <div className="lg:w-2/3" data-aos="fade-left">
           <CardProject />
         </div>
       </div>

@@ -124,7 +124,7 @@ const TechStack = () => {
     >
       <div>
         <div className="flex flex-wrap-reverse">
-          <div className="flex flex-col gap-10 lg:w-2/3">
+          <div className="flex flex-col gap-10 lg:w-2/3" data-aos="fade-right">
             <p className="pt-6 text-2xl font-light lg:pt-0 lg:text-3xl">
               Web Development
             </p>
@@ -144,7 +144,10 @@ const TechStack = () => {
             </div>
           </div>
 
-          <div className="mt-7 w-full md:w-2/4 lg:mt-0 lg:w-1/3">
+          <div
+            className="mt-7 w-full md:w-2/4 lg:mt-0 lg:w-1/3"
+            data-aos="fade-left"
+          >
             <div className="mb-4 hidden h-0.5 bg-gradient-to-l from-secondary to-primary lg:mb-2 lg:block lg:bg-gradient-to-r"></div>
             <p className="mb-6 text-2xl font-semibold lg:text-right lg:text-4xl">
               Tech Stack
