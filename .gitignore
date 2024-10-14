@@ -11,7 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
-src/pages/contact.jsx
+# src/pages/contact.jsx
 
 # Editor directories and files
 .vscode/*
