@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://jonathankenn.github.io/react_portfolio",
+  "homepage": ".",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
