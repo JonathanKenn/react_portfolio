@@ -14,7 +14,7 @@ function App() {
     AOS.init({ duration: 1300 });
   }, []);
   return (
-    <div className="bg-primary font-montserrat text-secondary">
+    <div className="overflow-hidden bg-primary font-montserrat text-secondary">
       <HomePage />
       <About />
       <TechStack />
