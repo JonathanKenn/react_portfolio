@@ -1,25 +1,53 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const form = useRef();
+  const [formData, setFormData] = useState({
+    from_name: "",
+    from_email: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
+
+  // Handle input changes
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
 
+    setIsSubmitting(true);
+
     emailjs
-      .sendForm("service_jyc0gef", "template_oot8zuj", form.current, {
-        publicKey: "8lhFFN6hg2mENdHvL",
-      })
+      .sendForm(
+        // @ts-ignore
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        // @ts-ignore
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+        // @ts-ignore
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+      )
       .then(
         () => {
-          console.log("SUCCESS!");
+          setIsSubmitting(false);
+          setShowPopup(true);
+          setFormData({ from_name: "", from_email: "", message: "" }); // Clear form
+          setTimeout(() => {
+            setShowPopup(false); // Hide popup after 3 seconds
+          }, 3000);
         },
         (error) => {
+          setIsSubmitting(false);
           console.log("FAILED...", error.text);
         },
       );
   };
+
   return (
     <div
       className="bg-gradient-to-bl from-[#171716] to-[#1E1D1A] px-10 pb-32 pt-12 text-white lg:flex lg:px-36 lg:pb-32 lg:pt-24"
@@ -58,6 +86,9 @@ const Contact = () => {
                 id="name"
                 className="w-full rounded-lg bg-[#2A2925] py-3 pl-3 text-white placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-[#EFE9D6] sm:text-sm sm:leading-6"
                 placeholder="Your Name"
+                value={formData.from_name}
+                onChange={handleInputChange}
+                required
               />
             </div>
           </div>
@@ -76,6 +107,9 @@ const Contact = () => {
                 id="email"
                 className="w-full rounded-lg bg-[#2A2925] py-3 pl-3 text-white placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-[#EFE9D6] sm:text-sm sm:leading-6"
                 placeholder="Your email"
+                value={formData.from_email}
+                onChange={handleInputChange}
+                required
               />
             </div>
           </div>
@@ -93,6 +127,9 @@ const Contact = () => {
                 id="message"
                 className="w-full resize-none rounded-lg bg-[#2A2925] px-3 pb-20 pt-3 text-white placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-[#EFE9D6] sm:text-sm sm:leading-6"
                 placeholder="Your message"
+                value={formData.message}
+                onChange={handleInputChange}
+                required
               />
             </div>
           </div>
@@ -100,14 +137,24 @@ const Contact = () => {
             <div className="mt-2 inline-block rounded-lg bg-gradient-to-b from-secondary to-[#EFE9D6] p-[0.05rem]">
               <button
                 type="submit"
-                className="hover:from-bg-[#2A2925] group relative overflow-hidden rounded-lg bg-[#2A2925] px-7 py-2.5 text-white transition-all duration-300 ease-out hover:bg-gradient-to-r hover:from-[#2A2925] hover:to-[#2A2925] hover:ring-2 hover:ring-[#2A2925] hover:ring-offset-2 lg:px-10 lg:py-3"
+                disabled={isSubmitting}
+                className={`hover:from-bg-[#2A2925] group relative overflow-hidden rounded-lg bg-[#2A2925] px-7 py-2.5 text-white transition-all duration-300 ease-out hover:bg-gradient-to-r hover:from-[#2A2925] hover:to-[#2A2925] hover:ring-2 hover:ring-[#2A2925] hover:ring-offset-2 lg:px-10 lg:py-3 ${
+                  isSubmitting ? "cursor-not-allowed opacity-50" : ""
+                }`}
               >
                 <span className="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10 transition-all duration-1000 group-hover:-translate-x-40"></span>
-                <span className="relative text-sm">Submit</span>
+                <span className="relative text-sm">
+                  {isSubmitting ? "Submitting..." : "Submit"}
+                </span>
               </button>
             </div>
           </div>
         </form>
+        {showPopup && (
+          <div className="mt-5 text-center text-green-500">
+            Your message has been sent successfully!
+          </div>
+        )}
       </div>
     </div>
   );
