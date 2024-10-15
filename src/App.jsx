@@ -8,7 +8,7 @@ import Contact from "./pages/contact";
 import Footer from "./pages/footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import DarkToggle from "./components/darkToggle";
+import DarkToggle from "./components/DarkToggle";
 
 function App() {
   useEffect(() => {
