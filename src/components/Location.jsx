@@ -16,21 +16,21 @@ const Location = () => {
           isOpen
             ? "-translate-x-[8.3rem] lg:-translate-x-[12.5rem]"
             : "-translate-x-12 lg:-translate-x-20"
-        } bottom-28 flex cursor-pointer items-center rounded-r-full bg-secondary py-3 pl-4 pr-3 text-white transition-transform duration-500 ease-in-out lg:gap-2 lg:py-4 lg:pl-8 lg:pr-4`}
+        } bottom-28 flex cursor-pointer items-center rounded-r-full bg-secondary py-3 pl-4 pr-3 text-white transition-transform duration-500 ease-in-out lg:gap-2 lg:py-4 lg:pl-8 lg:pr-4 dark:bg-primary`}
         onClick={togglePanel} // Tambahkan event onClick untuk toggle
       >
-        <p className="max-w-20 text-xs transition-all lg:max-w-24 lg:text-base">
+        <p className="max-w-20 text-xs transition-all lg:max-w-24 lg:text-base dark:font-medium dark:text-secondary">
           Located in Indonesia
         </p>
 
-        <div className="flex items-center justify-center rounded-full bg-primary lg:size-14">
+        <div className="flex items-center justify-center rounded-full bg-primary lg:size-14 dark:bg-secondary">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="size-10 text-secondary lg:size-11"
+            className="size-10 text-secondary lg:size-11 dark:text-primary"
           >
             <path
               strokeLinecap="round"
@@ -41,7 +41,9 @@ const Location = () => {
         </div>
       </div>
       <div className="absolute bottom-32 right-0 rotate-90">
-        <p className="text-xs lg:text-base">Scroll Down &rarr;</p>
+        <p className="text-xs lg:text-base dark:text-primary">
+          Scroll Down &rarr;
+        </p>
       </div>
     </div>
   );

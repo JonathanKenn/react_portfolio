@@ -2,8 +2,14 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="px-10 pb-32 pt-8 lg:px-36 lg:pt-10" id="about">
-      <div className="mt-14 block lg:flex" data-aos="fade-down">
+    <div
+      className="px-10 pb-32 pt-8 lg:px-36 lg:pt-10 dark:bg-secondary"
+      id="about"
+    >
+      <div
+        className="mt-14 block lg:flex dark:text-primary"
+        data-aos="fade-down"
+      >
         <div className="lg:w-1/3">
           <div className="mb-2 h-0.5 w-4/5 bg-gradient-to-r from-secondary to-primary"></div>
           <p className="mb-6 text-2xl font-semibold lg:text-4xl">About</p>
@@ -18,7 +24,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="font-sm mt-12 block gap-10 text-justify text-base lg:flex lg:text-base">
+      <div className="font-sm mt-12 block gap-10 text-justify text-base lg:flex lg:text-base dark:text-primary">
         <p className="mb-10" data-aos="fade-right">
           I started my journey in frontend development as a self-taught learner
           through YouTube. Additionally, I explored various programming
@@ -35,7 +41,7 @@ const About = () => {
         </p>
       </div>
       <div className="mt-16" data-aos="zoom-in-down">
-        <div className="mx-auto mb-8 h-[1.5px] w-4/5 bg-gradient-to-r from-primary via-secondary to-primary lg:w-1/3"></div>
+        <div className="mx-auto mb-8 h-[1.5px] w-4/5 bg-gradient-to-r from-primary via-secondary lg:w-1/3 dark:from-secondary dark:via-primary"></div>
         <div className="m-auto flex w-4/5 justify-center gap-8 lg:w-1/4">
           <a href="https://www.fiverr.com/jonathan_ken/develop-a-simple-n-attractive-website-responsive-affordable-and-user-friendly">
             <img

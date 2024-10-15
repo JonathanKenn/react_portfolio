@@ -107,13 +107,14 @@
   transform: none;
 }
 
+/* ```````````````````````````````````````````````````````````````````````````` */
+
 .button-19:active {
   background: none;
 }
 
 .button-19 {
   appearance: button;
-  background-color: #7d7b75;
   border: solid transparent;
   border-radius: 9px;
   border-width: 0 0 4px;
@@ -127,7 +128,6 @@
 
 .button-19:after {
   background-clip: padding-box;
-  background-color: #191815;
   border: solid transparent;
   border-radius: 9px;
   border-width: 0 0 4px;
@@ -145,10 +145,46 @@
 }
 
 .button-19:hover:not(:disabled) {
-  filter: brightness(1.6);
+  filter: brightness(1.4);
 }
 
 .button-19:active {
   border-width: 4px 0 0;
   background: none;
+}
+
+/* ```````````````````````````````````````````````````````````````````````````` */
+
+/* Menggunakan selector untuk menyembunyikan input checkbox */
+.checkbox-wrapper-54 input[type="checkbox"] {
+  visibility: hidden;
+  display: none;
+}
+
+/* Pseudo-element untuk ikon bulat pada slider */
+.checkbox-wrapper-54 .slider:before {
+  content: "";
+  position: absolute;
+  height: var(--size-of-icon, 1.4em);
+  width: var(--size-of-icon, 1.4em);
+  border-radius: 50%;
+  left: var(--slider-offset, 0.3em);
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+  transition: 0.4s;
+}
+
+/* Saat checkbox dicentang, ubah latar belakang slider */
+.checkbox-wrapper-54 input:checked + .slider {
+  background-color: #303136;
+}
+
+/* Saat checkbox dicentang, ubah posisi dan gaya ikon slider */
+.checkbox-wrapper-54 input:checked + .slider:before {
+  left: calc(100% - (var(--size-of-icon, 1.4em) + var(--slider-offset, 0.3em)));
+  background: #303136;
+  box-shadow:
+    inset -3px -2px 5px -2px #8983f7,
+    inset -10px -4px 0 0 #a3dafb;
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="fixed inset-x-0 bottom-8 z-50 m-auto max-w-xs rounded-full border bg-gradient-to-r from-secondary to-gradient2 text-white shadow-lg lg:max-w-xl">
+    <nav className="fixed inset-x-0 bottom-8 z-50 m-auto max-w-xs rounded-full border bg-gradient-to-r from-secondary to-gradient2 text-white shadow-xl lg:max-w-xl">
       <ul className="flex justify-between px-10 py-2.5 font-medium lg:px-16 lg:py-3">
         <li>
           <a href="#home">
