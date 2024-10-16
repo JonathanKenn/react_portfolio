@@ -43,21 +43,27 @@ const About = () => {
       <div className="mt-16" data-aos="zoom-in-down">
         <div className="mx-auto mb-8 h-[1.5px] w-4/5 bg-gradient-to-r from-primary via-secondary lg:w-1/3 dark:from-secondary dark:via-primary"></div>
         <div className="m-auto flex w-4/5 justify-center gap-8 lg:w-1/4">
-          <a href="https://www.fiverr.com/jonathan_ken/develop-a-simple-n-attractive-website-responsive-affordable-and-user-friendly">
+          <a
+            href="https://www.fiverr.com/jonathan_ken/develop-a-simple-n-attractive-website-responsive-affordable-and-user-friendly"
+            target="_blank"
+          >
             <img
               src="img/fiverr-icon.svg"
               alt="fiverr"
               className="h-9 w-9 grayscale transition-all duration-300 hover:grayscale-0 lg:h-11 lg:w-11"
             />
           </a>
-          <a href="https://www.freelancer.com/u/JonathanKenn">
+          <a href="https://www.freelancer.com/u/JonathanKenn" target="_blank">
             <img
               src="img/freelancer-icon.svg"
               alt="fiverr"
               className="h-9 w-9 grayscale transition-all duration-300 hover:grayscale-0 lg:h-11 lg:w-11"
             />
           </a>
-          <a href="https://www.upwork.com/freelancers/~01c6358114d46478c8?viewMode=1">
+          <a
+            href="https://www.upwork.com/freelancers/~01c6358114d46478c8?viewMode=1"
+            target="_blank"
+          >
             <img
               src="img/upwork-icon.png"
               alt="fiverr"
