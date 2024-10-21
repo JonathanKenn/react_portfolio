@@ -11,7 +11,7 @@ const About = () => {
         data-aos="fade-down"
       >
         <div className="lg:w-1/3">
-          <div className="mb-2 h-0.5 w-4/5 bg-gradient-to-r from-secondary to-primary"></div>
+          <div className="mb-2 h-0.5 w-4/5 bg-gradient-to-r from-secondary to-primary dark:from-primary"></div>
           <p className="mb-6 text-2xl font-semibold lg:text-4xl">About</p>
         </div>
         <div className="lg:w-2/3">
