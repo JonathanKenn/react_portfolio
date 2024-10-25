@@ -15,7 +15,7 @@ function App() {
     AOS.init({ duration: 1300 });
   }, []);
   return (
-    <div className="overflow-hidden bg-primary font-montserrat text-secondary">
+    <div className="bg-primary font-montserrat text-secondary">
       <DarkToggle />
       <HomePage />
       <About />

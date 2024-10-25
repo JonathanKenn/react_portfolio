@@ -9,7 +9,7 @@ const Project = () => {
     >
       <div className="mt-10 block lg:flex lg:items-start">
         <div
-          className="lg:sticky lg:top-10 lg:w-1/3 dark:text-primary"
+          className="lg:sticky lg:top-20 lg:w-1/3 dark:text-primary"
           data-aos="fade-right"
         >
           <div className="mb-2 h-[0.138rem] w-4/5 bg-gradient-to-r from-secondary to-primary dark:from-primary"></div>
