@@ -26,6 +26,36 @@ const CardProject = () => {
       date: "July 2024",
       link: "https://jonathankenn.github.io/bmw_slider/",
     },
+    {
+      name: "Air Jordan",
+      img: "img/porto/jordan.png",
+      desc: "The history and evolution of Air Jordan Sneakers",
+      long_desc:
+        "Air Jordan sneakers are more than just shoes; they’ve revolutionized basketball and streetwear. Since the mid-1980s, each model has embodied sport, style, and innovation. The history of Air Jordan mirrors Michael Jordan's legendary career, while the evolution of each sneaker highlights bold designs and technological advancements that still shape fashion and athletic footwear today.",
+      tech: ["html", "css", "js"],
+      date: "July 2024",
+      link: "https://jonathankenn.github.io/jordan_shoes/",
+    },
+    {
+      name: "BMW Car slider",
+      img: "img/porto/car.png",
+      desc: "Valorant Web Agent Slider Design",
+      long_desc:
+        "The BMW M3 is a legendary sports sedan that combines thrilling performance with luxury. With its powerful engine and precise handling, it delivers exhilarating acceleration and exceptional cornering capabilities. Inside, high-quality materials and advanced technology create a sophisticated atmosphere. Whether on city streets or winding roads, the BMW M3 exemplifies performance and elegance.",
+      tech: ["html", "css", "js"],
+      date: "July 2024",
+      link: "https://jonathankenn.github.io/bmw_slider/",
+    },
+    {
+      name: "Simple Portfolio Website",
+      img: "img/porto/simpleporto.png", // Ganti dengan path gambar proyek yang relevan
+      desc: "Portfolio Website Design (Dummy)",
+      long_desc:
+        "This is a simple and clean portfolio website designed using HTML, CSS, and JavaScript. The site is a demo version, so the content is still lorem ipsum placeholders and not the final real content. The project showcases how a professional portfolio could look, with sections for projects, skills, and contact information. The minimalist design and responsive layout make it easy to navigate on both desktop and mobile devices.",
+      tech: ["html", "css", "js"], // Teknologi yang digunakan
+      date: "January 2024", // Tanggal proyek
+      link: "https://jonathankenn.github.io/tailwindCSS_porto/", // Link ke project atau website live
+    },
   ];
 
   const handleCardClick = (project) => {
