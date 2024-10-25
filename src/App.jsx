@@ -16,13 +16,15 @@ function App() {
   }, []);
 
   return (
-    <div className="max-w-max bg-primary font-montserrat text-secondary">
+    <div className="max-w-full bg-primary font-montserrat text-secondary">
       <DarkToggle />
       <HomePage />
       <About />
       <TechStack />
       <BackToTop />
+
       <Project />
+
       <Contact />
       <Footer />
     </div>
