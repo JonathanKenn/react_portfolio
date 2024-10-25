@@ -16,7 +16,7 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-primary font-montserrat text-secondary">
+    <div className="max-w-full bg-primary font-montserrat text-secondary">
       <DarkToggle />
       <HomePage />
       <About />
