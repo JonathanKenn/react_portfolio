@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 const HomePage = () => {
   return (
     <div
-      className="home min-h-screen px-12 py-6 lg:px-20 dark:bg-secondary"
+      className="home min-h-screen overflow-x-hidden px-12 py-6 lg:px-20 dark:bg-secondary"
       id="home"
     >
       <div className="flex justify-between text-xs lg:text-sm dark:text-primary">

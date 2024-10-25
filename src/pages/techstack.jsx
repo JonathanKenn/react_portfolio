@@ -128,7 +128,7 @@ const TechStack = () => {
             <p className="pt-6 text-2xl font-light lg:pt-0 lg:text-3xl">
               Web Development
             </p>
-            <div className="-mt-2 flex max-w-3xl flex-wrap justify-between gap-8 lg:mt-0 lg:justify-normal">
+            <div className="-mt-2 flex max-w-3xl flex-wrap justify-between gap-8 md:justify-normal lg:mt-0 xl:justify-normal">
               {/* Render Web Development Tools */}
               {renderIcons(webDevTools)}
             </div>
@@ -138,7 +138,7 @@ const TechStack = () => {
             <p className="text-2xl font-light lg:pt-0 lg:text-3xl">
               Other Languages & Tools
             </p>
-            <div className="-mt-2 flex max-w-3xl flex-wrap justify-between gap-8 lg:mt-0 lg:justify-normal">
+            <div className="-mt-2 flex max-w-3xl flex-wrap justify-between gap-8 md:justify-normal lg:mt-0 xl:justify-normal">
               {/* Render Other Tools */}
               {renderIcons(otherTools)}
             </div>
