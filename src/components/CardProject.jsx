@@ -7,6 +7,16 @@ const CardProject = () => {
 
   const myProject = [
     {
+      name: "MovieRadar (COMING SOON)",
+      img: "img/porto/movieradar.png",
+      desc: "A web platform for exploring movies and TV shows",
+      long_desc:
+        "MovieRadar is an application designed to provide a user-friendly experience similar to IMDb, offering comprehensive information about films and TV shows. Utilizing the TMDB API, it allows users to discover trending titles, read reviews, and receive recommendations based on their preferences. This project is built for learning purposes by using data from the TMDB API.",
+      tech: ["react", "tailwind"],
+      date: "October 2024",
+      link: "#",
+    },
+    {
       name: "Air Jordan",
       img: "img/porto/jordan.png",
       desc: "The history and evolution of Air Jordan Sneakers",
@@ -33,7 +43,7 @@ const CardProject = () => {
       desc: "Portfolio Website Design (Dummy)",
       long_desc:
         "This is a simple and clean portfolio website designed using HTML, CSS, and JavaScript. The site is a demo version, so the content is still lorem ipsum placeholders and not the final real content. The project showcases how a professional portfolio could look, with sections for projects, skills, and contact information. The minimalist design and responsive layout make it easy to navigate on both desktop and mobile devices.",
-      tech: ["html", "css", "js"], // Teknologi yang digunakan
+      tech: ["html", "tailwind", "js"], // Teknologi yang digunakan
       date: "January 2024", // Tanggal proyek
       link: "https://jonathankenn.github.io/tailwindCSS_porto/", // Link ke project atau website live
     },

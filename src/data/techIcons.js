@@ -12,6 +12,14 @@ const techIcons = {
     src: "img/language/js.svg",
     alt: "JavaScript",
   },
+  react: {
+    src: "img/language/react-js-icon.svg",
+    alt: "reactjs",
+  },
+  tailwind: {
+    src: "img/language/tailwind.svg",
+    alt: "tailwind",
+  },
   // Tambahkan ikon lainnya jika diperlukan
 };
 
