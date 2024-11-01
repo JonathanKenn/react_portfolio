@@ -7,7 +7,7 @@ const CardProject = () => {
 
   const myProject = [
     {
-      name: "MovieRadar (COMING SOON)",
+      name: "MovieRadar (In Development)",
       img: "img/porto/movieradar.png",
       desc: "A web platform for exploring movies and TV shows",
       long_desc:
