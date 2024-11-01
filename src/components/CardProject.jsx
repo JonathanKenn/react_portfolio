@@ -14,7 +14,7 @@ const CardProject = () => {
         "MovieRadar is an application designed to provide a user-friendly experience similar to IMDb, offering comprehensive information about films and TV shows. Utilizing the TMDB API, it allows users to discover trending titles, read reviews, and receive recommendations based on their preferences. This project is built for learning purposes by using data from the TMDB API.",
       tech: ["react", "tailwind"],
       date: "October 2024",
-      link: "#",
+      link: "https://movieradar.vercel.app/home",
     },
     {
       name: "Air Jordan",
