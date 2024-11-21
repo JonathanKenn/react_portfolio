@@ -13,7 +13,7 @@ const CardProject = () => {
       long_desc:
         "MovieRadar is an application designed to provide a user-friendly experience similar to IMDb, offering comprehensive information about films and TV shows. Utilizing the TMDB API, it allows users to discover trending titles, read reviews, and receive recommendations based on their preferences. This project is built for learning purposes by using data from the TMDB API.",
       tech: ["react", "tailwind"],
-      date: "October 2024",
+      date: "Oct 2024",
       link: "https://movieradar.vercel.app/",
     },
     {
@@ -23,7 +23,7 @@ const CardProject = () => {
       long_desc:
         "Air Jordan sneakers are more than just shoes; they’ve revolutionized basketball and streetwear. Since the mid-1980s, each model has embodied sport, style, and innovation. The history of Air Jordan mirrors Michael Jordan's legendary career, while the evolution of each sneaker highlights bold designs and technological advancements that still shape fashion and athletic footwear today.",
       tech: ["html", "css", "js"],
-      date: "July 2024",
+      date: "Jul 2024",
       link: "https://jonathankenn.github.io/jordan_shoes/",
     },
     {
@@ -33,7 +33,7 @@ const CardProject = () => {
       long_desc:
         "The BMW M3 is a legendary sports sedan that combines thrilling performance with luxury. With its powerful engine and precise handling, it delivers exhilarating acceleration and exceptional cornering capabilities. Inside, high-quality materials and advanced technology create a sophisticated atmosphere. Whether on city streets or winding roads, the BMW M3 exemplifies performance and elegance.",
       tech: ["html", "css", "js"],
-      date: "July 2024",
+      date: "Jul 2024",
       link: "https://jonathankenn.github.io/bmw_slider/",
     },
 
@@ -44,7 +44,7 @@ const CardProject = () => {
       long_desc:
         "This is a simple and clean portfolio website designed using HTML, CSS, and JavaScript. The site is a demo version, so the content is still lorem ipsum placeholders and not the final real content. The project showcases how a professional portfolio could look, with sections for projects, skills, and contact information. The minimalist design and responsive layout make it easy to navigate on both desktop and mobile devices.",
       tech: ["html", "tailwind", "js"], // Teknologi yang digunakan
-      date: "January 2024", // Tanggal proyek
+      date: "Jan 2024", // Tanggal proyek
       link: "https://jonathankenn.github.io/tailwindCSS_porto/", // Link ke project atau website live
     },
   ];
@@ -84,14 +84,14 @@ const CardProject = () => {
                     {project.tech.map((tech, i) => (
                       <div
                         key={i}
-                        className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#777264,#FBFFF4] from-25% via-primary via-60% to-gradient2 p-[0.08rem] lg:h-[3rem] lg:w-[3rem] dark:from-[#FBFFF4,#191815] dark:via-secondary dark:to-primary"
+                        className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#777264,#FBFFF4] from-25% via-primary via-60% to-gradient2 p-[0.08rem] 2xl:h-[3rem] 2xl:w-[3rem] dark:from-[#FBFFF4,#191815] dark:via-secondary dark:to-primary"
                       >
                         <div className="flex size-full items-center justify-center rounded-[0.65rem] bg-primary dark:bg-secondary">
                           {/* Perbaiki dengan mengambil .src dan .alt */}
                           <img
                             src={techIcons[tech]?.src}
                             alt={techIcons[tech]?.alt}
-                            className="size-7"
+                            className="size-6 2xl:size-7"
                           />
                         </div>
                       </div>
@@ -104,9 +104,11 @@ const CardProject = () => {
                       className="group relative overflow-hidden rounded-lg bg-gradient2 px-3 py-2 text-white transition-all duration-300 ease-out hover:bg-gradient-to-r hover:from-gradient2 hover:to-[#928E83] hover:ring-2 hover:ring-gradient2 hover:ring-offset-2 lg:px-5 lg:py-2.5"
                     >
                       <span className="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10 transition-all duration-1000 group-hover:-translate-x-40"></span>
-                      <span className="relative text-sm">View Details</span>
+                      <span className="relative text-xs 2xl:text-sm">
+                        View Details
+                      </span>
                     </button>
-                    <p className="text-sm">{project.date}</p>
+                    <p className="text-xs 2xl:text-sm">{project.date}</p>
                   </div>
                 </div>
               </div>
