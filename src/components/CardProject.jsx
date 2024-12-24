@@ -13,7 +13,7 @@ const CardProject = () => {
       long_desc:
         "MovieRadar is an application designed to provide a user-friendly experience similar to IMDb, offering comprehensive information about films and TV shows. Utilizing the TMDB API, it allows users to discover trending titles, read reviews, and receive recommendations based on their preferences. This project is built for learning purposes by using data from the TMDB API.",
       tech: ["react", "tailwind"],
-      date: "Oct 2024",
+      date: "- 2024",
       link: "https://movieradar.vercel.app/",
     },
     {
@@ -29,7 +29,7 @@ const CardProject = () => {
     {
       name: "BMW Car slider",
       img: "img/porto/car.png",
-      desc: "Valorant Web Agent Slider Design",
+      desc: "BMW Car Slider Design",
       long_desc:
         "The BMW M3 is a legendary sports sedan that combines thrilling performance with luxury. With its powerful engine and precise handling, it delivers exhilarating acceleration and exceptional cornering capabilities. Inside, high-quality materials and advanced technology create a sophisticated atmosphere. Whether on city streets or winding roads, the BMW M3 exemplifies performance and elegance.",
       tech: ["html", "css", "js"],
