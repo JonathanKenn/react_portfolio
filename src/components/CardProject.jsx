@@ -7,14 +7,24 @@ const CardProject = () => {
 
   const myProject = [
     {
-      name: "MovieRadar (In Development)",
+      name: "MovieRadar (IN DEVELOPMENT)",
       img: "img/porto/movieradar.png",
       desc: "A web platform for exploring movies and TV shows",
       long_desc:
-        "MovieRadar is an application designed to provide a user-friendly experience similar to IMDb, offering comprehensive information about films and TV shows. Utilizing the TMDB API, it allows users to discover trending titles, read reviews, and receive recommendations based on their preferences. This project is built for learning purposes by using data from the TMDB API.",
-      tech: ["react", "tailwind"],
+        "(REFRESH THE PAGE IF THE IMAGE DOESN'T LOAD AND WAIT FOR A SECONDS) MovieRadar is an application designed to provide a user-friendly experience similar to IMDb, offering comprehensive information about films and TV shows. Utilizing the TMDB API, it allows users to discover trending titles, read reviews, and receive recommendations based on their preferences. This project is built for learning purposes by using data from the TMDB API.",
+      tech: ["react", "css", "tailwind"],
       date: "- 2024",
       link: "https://movieradar.vercel.app/",
+    },
+    {
+      name: "CryptoEvent (DEMO)",
+      img: "img/porto/cryptoevent.png",
+      desc: "An Educational Crypto Event Landing Page",
+      long_desc:
+        "CryptoEvent is a demo landing page that reimagines what a blockchain conference website might look like. Built as a learning project, it showcases the journey of cryptocurrency through key historical moments, from Bitcoin's Genesis Block to Ethereum's innovation. The site features interactive sections about blockchain milestones, key figures like Satoshi Nakamoto and Vitalik Buterin, and educational resources about cryptocurrency. This project demonstrates modern web development practices while exploring crypto themes.",
+      tech: ["html", "css", "bootstrap", "js"],
+      date: "Desc 2024",
+      link: "https://cryptoeventdemo.vercel.app/",
     },
     {
       name: "Air Jordan",

@@ -20,6 +20,10 @@ const techIcons = {
     src: "img/language/tailwind.svg",
     alt: "tailwind",
   },
+  bootstrap: {
+    src: "img/language/bootstrap.svg",
+    alt: "bootstrap",
+  },
   // Tambahkan ikon lainnya jika diperlukan
 };
 
