@@ -15,23 +15,23 @@ const CardProject = () => {
   };
 
   return (
-    <div className="grid grid-cols-3 gap-4">
+    <div className="grid grid-cols-1 gap-x-5 gap-y-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-y-7">
       {myProject.map((project, index) => {
         return (
           <div
             key={index}
-            className="relative mb-9 overflow-hidden rounded-2xl bg-gradient-to-br from-secondary from-10% to-[#EFE9D6] to-50% p-[0.138rem] dark:from-[#EFE9D6] dark:to-bgIcon"
+            className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-secondary from-10% to-[#EFE9D6] to-50% p-[0.138rem] dark:from-[#EFE9D6] dark:to-bgIcon"
           >
             <div className="rounded-2xl bg-primary dark:bg-secondary dark:text-primary">
               <img
                 src={project.img}
                 alt={project.name}
-                className="w-full object-cover lg:rounded-t-2xl"
+                className="w-full rounded-t-2xl object-cover"
               />
               <div className="flex items-end">
-                <div className="z-10 ml-0 flex w-full flex-col justify-between gap-y-5 px-4 py-3 lg:px-8 lg:py-5">
+                <div className="z-10 ml-0 flex w-full flex-col justify-between gap-y-5 px-4 py-4 lg:px-5 lg:py-5">
                   <div>
-                    <h1 className="mb-1 text-lg font-semibold uppercase">
+                    <h1 className="mb-1 text-base font-semibold uppercase lg:text-lg">
                       {project.name}
                     </h1>
                     <p className="h-9 text-sm italic">{project.desc}</p>
@@ -44,7 +44,6 @@ const CardProject = () => {
                         className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#777264,#FBFFF4] from-25% via-primary via-60% to-gradient2 p-[0.08rem] 2xl:h-[3rem] 2xl:w-[3rem] dark:from-[#FBFFF4,#191815] dark:via-secondary dark:to-primary"
                       >
                         <div className="flex size-full items-center justify-center rounded-[0.65rem] bg-primary dark:bg-secondary">
-                          {/* Perbaiki dengan mengambil .src dan .alt */}
                           <img
                             src={techIcons[tech]?.src}
                             alt={techIcons[tech]?.alt}

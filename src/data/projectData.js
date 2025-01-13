@@ -1,8 +1,8 @@
 const myProject = [
   {
-    name: "MovieRadar (IN DEVELOPMENT)",
+    name: "MovieRadar",
     img: "img/porto/movieradar.png",
-    desc: "A web platform for exploring movies and TV shows",
+    desc: " (IN DEVELOPMENT) A web platform for exploring movies",
     long_desc:
       "(REFRESH THE PAGE IF THE IMAGE DOESN'T LOAD AND WAIT FOR A SECONDS) MovieRadar is an application designed to provide a user-friendly experience similar to IMDb, offering comprehensive information about films and TV shows. Utilizing the TMDB API, it allows users to discover trending titles, read reviews, and receive recommendations based on their preferences. This project is built for learning purposes by using data from the TMDB API.",
     tech: ["react", "css", "tailwind"],
@@ -10,9 +10,9 @@ const myProject = [
     link: "https://movieradar.vercel.app/",
   },
   {
-    name: "CryptoEvent (DEMO)",
+    name: "CryptoEvent",
     img: "img/porto/cryptoevent.png",
-    desc: "An Educational Crypto Event Landing Page",
+    desc: "(DUMMY) An Educational Crypto Event Landing Page",
     long_desc:
       "CryptoEvent is a demo landing page that reimagines what a blockchain conference website might look like. Built as a learning project, it showcases the journey of cryptocurrency through key historical moments, from Bitcoin's Genesis Block to Ethereum's innovation. The site features interactive sections about blockchain milestones, key figures like Satoshi Nakamoto and Vitalik Buterin, and educational resources about cryptocurrency. This project demonstrates modern web development practices while exploring crypto themes.",
     tech: ["html", "css", "bootstrap", "js"],
@@ -41,9 +41,9 @@ const myProject = [
   },
 
   {
-    name: "Simple Portfolio Website",
+    name: "Portfolio Website",
     img: "img/porto/simpleporto.png", // Ganti dengan path gambar proyek yang relevan
-    desc: "Portfolio Website Design (Dummy)",
+    desc: "(DUMMY) A Simple Portfolio Website Design",
     long_desc:
       "This is a simple and clean portfolio website designed using HTML, CSS, and JavaScript. The site is a demo version, so the content is still lorem ipsum placeholders and not the final real content. The project showcases how a professional portfolio could look, with sections for projects, skills, and contact information. The minimalist design and responsive layout make it easy to navigate on both desktop and mobile devices.",
     tech: ["html", "tailwind", "js"], // Teknologi yang digunakan

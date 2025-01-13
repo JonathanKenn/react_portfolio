@@ -5,8 +5,6 @@ import "./index.css";
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MyprojectPage from "./pages/MyProjectPage.jsx";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const router = createBrowserRouter([
   {
