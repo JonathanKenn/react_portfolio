@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import HomePage from "./pages/home";
-import About from "./pages/about";
-import TechStack from "./pages/techstack";
+import HomePage from "./section/home";
+import About from "./section/about";
+import TechStack from "./section/techstack";
 import BackToTop from "./components/BackTop";
-import Project from "./pages/project";
-import Contact from "./pages/contact";
-import Footer from "./pages/footer";
+import Project from "./section/project";
+import Contact from "./section/contact";
+import Footer from "./section/footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import DarkToggle from "./components/DarkToggle";

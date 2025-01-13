@@ -1,11 +1,12 @@
 import React from "react";
 import CardProject from "../components/CardProject";
+import { Link } from "react-router-dom";
 
 const Project = () => {
   return (
     <div
       id="project"
-      className="px-10 pb-32 pt-8 lg:px-36 lg:pt-10 dark:bg-gradient-to-br dark:from-[#1E1D1A] dark:to-[#171716]"
+      className="px-10 pb-32 pt-8 lg:px-36 lg:pt-10 dark:bg-secondary"
     >
       <div className="mt-10 block lg:flex lg:items-start">
         <div
@@ -18,9 +19,12 @@ const Project = () => {
             Here are some of the projects I`ve worked on, showcasing my skills
             and creativity in frontend web development and design.
           </p>
-          <button className="button-19 mb-10 bg-[#7d7b75] px-4 py-2 text-sm font-medium text-white after:bg-secondary lg:px-6 lg:py-2.5 lg:text-base dark:bg-gradient2 dark:text-secondary dark:after:bg-primary">
+          <Link
+            to="/MyProject"
+            className="button-19 mb-10 bg-[#7d7b75] px-4 py-2 text-sm font-medium text-white after:bg-secondary lg:px-6 lg:py-2.5 lg:text-base dark:bg-gradient2 dark:text-secondary dark:after:bg-primary"
+          >
             Explore More
-          </button>
+          </Link>
         </div>
 
         <div className="lg:w-2/3" data-aos="fade-left">

@@ -15,26 +15,26 @@ const CardProject = () => {
   };
 
   return (
-    <div>
+    <div className="grid grid-cols-3 gap-4">
       {myProject.map((project, index) => {
         return (
           <div
             key={index}
             className="relative mb-9 overflow-hidden rounded-2xl bg-gradient-to-br from-secondary from-10% to-[#EFE9D6] to-50% p-[0.138rem] dark:from-[#EFE9D6] dark:to-bgIcon"
           >
-            <div className="block overflow-hidden rounded-2xl bg-primary lg:flex dark:bg-secondary dark:text-primary">
+            <div className="rounded-2xl bg-primary dark:bg-secondary dark:text-primary">
               <img
                 src={project.img}
                 alt={project.name}
-                className="object-cover lg:w-3/5 lg:rounded-s-2xl"
+                className="w-full object-cover lg:rounded-t-2xl"
               />
-              <div className="flex w-full items-end">
-                <div className="z-10 ml-0 flex h-[16.5rem] w-full flex-col justify-between px-4 py-3 lg:-ml-8 lg:bg-primary lg:px-8 lg:py-5 lg:shadow-[0px_-0px_20px_0px_#00000017] dark:bg-secondary dark:shadow-[0px_-0px_20px_0px_#ffffff25]">
+              <div className="flex items-end">
+                <div className="z-10 ml-0 flex w-full flex-col justify-between gap-y-5 px-4 py-3 lg:px-8 lg:py-5">
                   <div>
                     <h1 className="mb-1 text-lg font-semibold uppercase">
                       {project.name}
                     </h1>
-                    <p className="text-sm italic">{project.desc}</p>
+                    <p className="h-9 text-sm italic">{project.desc}</p>
                   </div>
                   <div className="h-[0.1rem] bg-gradient-to-r from-gradient2 to-primary"></div>
                   <div className="flex gap-4">

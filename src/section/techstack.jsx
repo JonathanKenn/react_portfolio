@@ -119,7 +119,7 @@ const TechStack = () => {
 
   return (
     <div
-      className="bg-gradient-to-bl from-[#171716] to-[#1E1D1A] px-10 pb-32 pt-8 text-white lg:px-36 lg:pt-14"
+      className="bg-secondary px-10 pb-32 pt-8 text-white lg:px-36 lg:pt-14"
       id="tech"
     >
       <div>

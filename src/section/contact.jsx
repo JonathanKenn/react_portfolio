@@ -50,7 +50,7 @@ const Contact = () => {
 
   return (
     <div
-      className="bg-gradient-to-bl from-[#171716] to-[#1E1D1A] px-10 pb-32 pt-12 text-white lg:flex lg:px-36 lg:pb-32 lg:pt-24"
+      className="bg-secondary bg-gradient-to-bl px-10 pb-32 pt-12 text-white lg:flex lg:px-36 lg:pb-32 lg:pt-24"
       id="contact"
     >
       <div className="lg:w-1/3" data-aos="fade-right">
