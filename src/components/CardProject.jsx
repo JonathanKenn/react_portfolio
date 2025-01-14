@@ -14,9 +14,11 @@ const CardProject = () => {
     setSelectedProject(null);
   };
 
+  const limitedProjects = myProject.slice(0, 4);
+
   return (
     <div>
-      {myProject.map((project, index) => {
+      {limitedProjects.map((project, index) => {
         return (
           <div
             key={index}
