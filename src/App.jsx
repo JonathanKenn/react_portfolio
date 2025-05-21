@@ -9,6 +9,7 @@ import Footer from "./section/footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import DarkToggle from "./components/DarkToggle";
+import CanvasCursor from "./utils/canva-cursor";
 
 function App() {
   useEffect(() => {
@@ -27,6 +28,7 @@ function App() {
 
       <Contact />
       <Footer />
+      <CanvasCursor />
     </div>
   );
 }

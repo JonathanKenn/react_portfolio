@@ -3,6 +3,7 @@ import DarkToggle from "../components/DarkToggle";
 import CardProject2 from "../components/CardProject2";
 import Footer from "../section/footer";
 import { Link } from "react-router-dom";
+import CanvasCursor from "../utils/canva-cursor";
 
 const MyprojectPage = () => {
   useEffect(() => {
@@ -38,6 +39,7 @@ const MyprojectPage = () => {
         </div>
       </div>
       <Footer />
+      <CanvasCursor />
     </div>
   );
 };
